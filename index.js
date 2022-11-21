@@ -14,6 +14,8 @@ function getMaxNum(someNum) {
 // Iteration 2 tests:
 console.log(getMaxNum([45, 67, 12, 34, 67])) // Should return 67
 console.log(getMaxNum(['hello', [0, 1, 2], 34, 45, 12, 0])) // Should return 45
+console.log(getMaxNum([3,5,7])) // Should return 7
+console.log(getMaxNum(['hello', 19, 1, undefined])) // Should return 19
 
 
 
@@ -43,7 +45,7 @@ console.log(changeItem([1, 1, 3, 2, 4, 1, 1], 1, 8)) // Should return [8, 8, 3, 
 /// Iteration 4: orderByDate
 
 function orderByDate(someArr) {
-  const orderBy = someArr.map(theYears => theYears.year).sort((a,b) => a - b);
+  const orderBy = someArr.sort((a,b) => a.year - b.year);
   return orderBy;
 };
 

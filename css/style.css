@@ -1,3 +1,313 @@
+/*-----GENERAL-----*/
+html {
+  width: 100vw;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+}
+
 body {
-  background-color: red;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/blue-white-balls-shoot-out-open-door-into-large-bright-room.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 15px 10px 0px;
+}
+
+h1 {
+  font-size: 8rem;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: white;
+}
+
+button {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+}
+
+/*-----FIRST SECTION-----*/
+section.section-logo-nav {
+  width: 100%;
+  padding-bottom: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  position: sticky;
+  top: 0;
+}
+section.section-logo-nav div.logo-and-menu {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+section.section-logo-nav div.logo-and-menu div.logo img.logo {
+  width: 2.8rem;
+  height: 2.8rem;
+}
+
+section.section-logo-nav div.logo-and-menu nav.menu ul.menu-items {
+  display: flex;
+  gap: 0.6rem;
+}
+
+section.section-logo-nav div.logo-and-menu nav.menu ul.menu-items li a{
+  text-decoration: none;
+  font-weight: 900;
+  color: white;
+}
+
+section.section-logo-nav div.logo-and-menu nav.menu ul.menu-items li a:hover {
+  text-decoration: none;
+  font-weight: 900;
+  color: white;
+  text-shadow: 0px 0px 13px rgb(55, 255, 0);
+}
+
+
+section.section-logo-nav div.icons {
+  display: flex;
+  gap: 0.4rem;
+  
+}
+section.section-logo-nav div.icons img {
+  width: 1.3rem;
+  height: 1.3rem;
+}
+
+/*-----SECOND SECTION-----*/
+header.header-container {
+  width: 100%;
+  display: flex;
+  text-align: center;
+  padding: 2rem 0 0;
+}
+
+header.header-container section.section-info h1.principal-title {
+  font-size: 8vh;
+  padding-bottom: 2rem;
+  color: white;
+  text-shadow: 0px 0px 13px rgb(55, 255, 0);
+  font-weight: 700;
+}
+
+h1.principal-title:hover {
+  font-weight: 700;
+}
+
+header.header-container section.section-info p.info {
+  font-size: 1.2rem;
+  padding: 0 3rem 3rem; 
+}
+
+header.header-container section.section-info button.first-button {
+  background-color: #ffffff;
+  color: rgb(13, 133, 193);
+  border: none;
+  border-radius: 0.3rem;
+  padding: 0.8rem 1rem;
+  width: 9rem;
+  margin-right: 0.3rem;
+}
+
+header.header-container section.section-info button.second-button {
+  background-color: transparent;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 0.3rem;
+  padding: 0.8rem 1rem;
+  width: 9rem;
+  margin-left: 0.3rem; 
+}
+
+header.header-container section.section-info button.first-button:hover {
+    background-color: transparent;
+    color: white;
+    box-shadow: 0px 0px 13px rgb(55, 255, 0);
+    transition-duration: 0.4s;
+}
+
+header.header-container section.section-info button.second-button:hover {
+  background-color: white;
+  color: rgb(13, 133, 193);
+  box-shadow: 0px 0px 13px rgb(55, 255, 0);
+  transition-duration: 0.4s;
+  
+}
+
+header.header-container section.section-info p.info-available {
+  margin: 5rem 0 1rem;
+}
+
+header.header-container section.section-info div.softwares-icons img {
+  width: 2rem;
+  height: 2rem;
+  margin: 0.5rem 1.1rem;
+}
+
+header.header-container section.section-info div.softwares-icons img:hover{
+  width: 2rem;
+  height: 2rem;
+  margin: 0.5rem 1.1rem;
+  filter: invert(26%) sepia(19%) saturate(1083%) hue-rotate(80deg) brightness(95%) contrast(106%);
+}
+
+
+/*---------MEDIA QUERIE SECTION----------*/
+
+/*--------MW:768px---------*/
+
+@media (min-width: 768px) {
+body{
+  padding: 20px 20px 0px;
+}
+section.section-logo-nav div.logo-and-menu {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+section.section-logo-nav div.logo-and-menu div.logo img.logo {
+  width: 2.8rem;
+  height: 2.8rem;
+}
+
+section.section-logo-nav div.logo-and-menu nav.menu ul.menu-items {
+  display: flex;
+  gap: 1rem;
+  background-color: blue
+}
+
+section.section-logo-nav div.logo-and-menu nav.menu ul.menu-items li a {
+  text-decoration: none;
+  font-weight: 900;
+  color: white;
+}
+
+section.section-logo-nav div.logo-and-menu nav.menu ul.menu-items li a:hover {
+  text-decoration: none;
+  font-weight: 900;
+  color: white;
+  text-shadow: 0px 0px 13px rgb(55, 255, 0);
+}
+
+
+section.section-logo-nav div.icons {
+  display: flex;
+  gap: 1rem;
+}
+}
+
+/*--------MW:1000px---------*/
+@media (min-width: 1000px) {
+
+/*-----FIRST SECTION-----*/
+section.section-logo-nav {
+  width: 100%;
+  padding-bottom: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  position: sticky;
+  top: 0;
+}
+
+section.section-logo-nav div.logo-and-menu {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+section.section-logo-nav div.logo-and-menu div.logo img.logo {
+  width: 2.8rem;
+  height: 2.8rem;
+}
+
+section.section-logo-nav div.logo-and-menu nav.menu ul.menu-items {
+  display: flex;
+  gap: 1rem;
+}
+
+section.section-logo-nav div.logo-and-menu nav.menu ul.menu-items li a {
+  text-decoration: none;
+  font-weight: 900;
+  color: white;
+}
+
+section.section-logo-nav div.logo-and-menu nav.menu ul.menu-items li a:hover {
+  text-decoration: none;
+  font-weight: 900;
+  color: white;
+  text-shadow: 0px 0px 13px rgb(55, 255, 0);
+}
+
+
+section.section-logo-nav div.icons {
+  display: flex;
+  gap: 1rem;
+}
+
+section.section-logo-nav div.icons img {
+  width: 1.3rem;
+  height: 1.3rem;
+}
+
+/*-----SECOND SECTION-----*/
+header.header-container {
+  width: 100%;
+  display: flex;
+  text-align: left;
+  padding: 2rem 25rem 0 1rem;
+}
+
+header.header-container section.section-info h1.principal-title {
+  font-size: 8vh;
+  padding-bottom: 2rem;
+  color: white;
+  text-shadow: 0px 0px 13px rgb(55, 255, 0);
+  font-weight: 700;
+}
+
+header.header-container section.section-info p.info {
+  font-size: 1.2rem;
+  padding: 0 0rem 3rem 0;
+}
+}
+/*--------MW:1100px---------*/
+@media (min-width: 1100px) {
+  header.header-container {
+    padding: 20px 500px 0 10px;
+  }
+}
+/*--------MW:1217px---------*/
+@media (min-width: 1217px) {
+  header.header-container {
+    padding: 20px 600px 0 10px;
+  }
+}
+/*--------MW:1320ppx---------*/
+@media (min-width: 1320px) {
+  header.header-container {
+    padding: 20px 700px 0 10px;
+  }
+}
+/*--------MW:1420px---------*/
+@media (min-width: 1420px) {
+  header.header-container {
+    padding: 20px 800px 0 10px;
+  }
 }
