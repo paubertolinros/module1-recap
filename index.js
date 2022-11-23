@@ -19,12 +19,8 @@ console.log(getMaxNum([45, 67, 12, 34, 67])) // Should return 67
 console.log(getMaxNum(['hello', [0, 1, 2], 34, 45, 12, 0])) // Should return 45
 console.log(getMaxNum([3,5,7])) // Should return 7
 console.log(getMaxNum(['hello', 19, 1, undefined])) // Should return 19
-
-
-
-
 /// Iteration 3: changeItem
-
+// FOR LOOP
 /*function changeItem(someArr, num1, num2) {
   let newArr = [];
   for (let i = 0; i < someArr.length; i++) {
@@ -36,25 +32,27 @@ console.log(getMaxNum(['hello', 19, 1, undefined])) // Should return 19
   };
   return newArr;
 };*/
-function changeItem(someArr, num1, num2) { 
-  
-}
-
+//FOR EACH
+function changeItem(someArr, num1, num2) {
+  let resultArr = [];
+  someArr.forEach((elem) => {
+    if (elem === num1) {
+      resultArr.push(num2)
+    } else {
+      resultArr.push(elem)
+    };
+  });
+  return resultArr;
+};
 // Iteration 3 tests:
 console.log(changeItem([3, 5, 7], 3, 4)) // Should return [4,5,7]
 console.log(changeItem([17, 18, 6, 18, 3], 18, 2)) // Should return [17, 2, 6, 2, 3];
 console.log(changeItem([1, 1, 3, 2, 4, 1, 1], 1, 8)) // Should return [8, 8, 3, 2, 4, 8, 8] 
-
-
-
-
 /// Iteration 4: orderByDate
-
 function orderByDate(someArr) {
   const orderBy = someArr.sort((a,b) => a.year - b.year);
   return orderBy;
 };
-
 // Iteration 4 tests:
  const birthdays = [
    {
@@ -90,12 +88,7 @@ function orderByDate(someArr) {
  ]
 console.log(orderByDate(birthdays)) // Should return them ordered 1979, 1988, 1989, 1990
 console.log(orderByDate(importantDates)) // Should return them ordered 2013, 2014, 2019
-
-
-
-
 /// Iteration 5: new machine gun
-
 class Weapon {
 constructor(name, power, ammo=10){
   this.name = name;
@@ -120,7 +113,6 @@ constructor(name, power, ammo=10){
     return this.ammo;
   };
 };
-
 // Iteration 5 tests
 const machineGun = new Weapon('Machine gun', 90, 50);
 console.log('Begin:')

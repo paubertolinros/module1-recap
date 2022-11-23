@@ -20,7 +20,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  padding: 15px 10px 30px;
+  padding: 15px 15px 30px;
 }
 
 h1 {
@@ -83,7 +83,7 @@ section.section-logo-nav div.icons {
   gap: 0.4rem;
   
 }
-section.section-logo-nav div.icons img {
+section.section-logo-nav div.icons > a > img{
   width: 1.3rem;
   height: 1.3rem;
 }
@@ -174,119 +174,132 @@ header.header-container section.section-info div.softwares-icons img:hover{
     }
 }
 /*--------MW:768px---------*/
-
 @media (min-width: 768px) {
-body{
-  padding: 20px 20px 0px;
-}
-section.section-logo-nav div.logo-and-menu {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
+  body{
+    padding: 20px 20px 20px;
+  }
+  section.section-logo-nav div.logo-and-menu {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
 
-section.section-logo-nav div.logo-and-menu div.logo img.logo {
-  width: 2.8rem;
-  height: 2.8rem;
-}
+  section.section-logo-nav div.logo-and-menu div.logo img.logo {
+    width: 2.8rem;
+    height: 2.8rem;
+  }
 
-section.section-logo-nav div.logo-and-menu nav.menu ul.menu-items {
-  display: flex;
-  gap: 1rem;
-}
+  section.section-logo-nav div.logo-and-menu nav.menu ul.menu-items {
+    display: flex;
+    gap: 1rem;
+  }
 
-section.section-logo-nav div.logo-and-menu nav.menu ul.menu-items li a {
-  text-decoration: none;
-  font-weight: 900;
-  color: white;
-}
+  section.section-logo-nav div.logo-and-menu nav.menu ul.menu-items li a {
+    text-decoration: none;
+    font-weight: 900;
+    color: white;
+  }
 
-section.section-logo-nav div.logo-and-menu nav.menu ul.menu-items li a:hover {
-  text-decoration: none;
-  font-weight: 900;
-  color: white;
-  text-shadow: 0px 0px 13px rgb(55, 255, 0);
-}
+  section.section-logo-nav div.logo-and-menu nav.menu ul.menu-items li a:hover {
+    text-decoration: none;
+    font-weight: 900;
+    color: white;
+    text-shadow: 0px 0px 13px rgb(55, 255, 0);
+  }
 
 
-section.section-logo-nav div.icons {
-  display: flex;
-  gap: 1rem;
-}
+  section.section-logo-nav div.icons {
+    display: flex;
+    gap: 1rem;
+  }
 }
 
 /*--------MW:1000px---------*/
 @media (min-width: 1000px) {
 
 /*-----FIRST SECTION-----*/
-section.section-logo-nav {
-  width: 100%;
-  padding-bottom: 4rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: nowrap;
-  position: sticky;
-  top: 0;
-}
+  body {
+    padding: 15px 35px 15px;
+  }
+  section.section-logo-nav {
+    width: 100%;
+    padding-bottom: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    position: sticky;
+    top: 0;
+  }
 
-section.section-logo-nav div.logo-and-menu {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
+  section.section-logo-nav div.logo-and-menu {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
 
-section.section-logo-nav div.logo-and-menu div.logo img.logo {
-  width: 2.8rem;
-  height: 2.8rem;
-}
+  section.section-logo-nav div.logo-and-menu div.logo img.logo {
+    width: 2.8rem;
+    height: 2.8rem;
+  }
 
-section.section-logo-nav div.logo-and-menu nav.menu ul.menu-items {
-  display: flex;
-  gap: 1rem;
-}
+  section.section-logo-nav div.logo-and-menu nav.menu ul.menu-items {
+    display: flex;
+    gap: 1rem;
+  }
 
-section.section-logo-nav div.logo-and-menu nav.menu ul.menu-items li a {
-  text-decoration: none;
-  font-weight: 900;
-  color: white;
-}
+  section.section-logo-nav div.logo-and-menu nav.menu ul.menu-items li a {
+    text-decoration: none;
+    font-weight: 900;
+    color: white;
+  }
 
-section.section-logo-nav div.logo-and-menu nav.menu ul.menu-items li a:hover {
-  text-decoration: none;
-  font-weight: 900;
-  color: white;
-  text-shadow: 0px 0px 13px rgb(55, 255, 0);
-}
+  section.section-logo-nav div.logo-and-menu nav.menu ul.menu-items li a:hover {
+    text-decoration: none;
+    font-weight: 900;
+    color: white;
+    text-shadow: 0px 0px 13px rgb(55, 255, 0);
+  }
 
+  section.section-logo-nav div.icons {
+    display: flex;
+    gap: 1rem;
+  }
 
-section.section-logo-nav div.icons {
-  display: flex;
-  gap: 1rem;
-}
+  section.section-logo-nav div.icons>a>img {
+    width: 1.3rem;
+    height: 1.3rem;
+  }
 
-section.section-logo-nav div.icons img {
-  width: 1.3rem;
-  height: 1.3rem;
-}
+  /*-----SECOND SECTION-----*/
+  header.header-container {
+    width: 700px;
+    display: flex;
+    text-align: left;
+  }
 
-/*-----SECOND SECTION-----*/
-header.header-container {
-  width: 700px;
-  display: flex;
-  text-align: left;
-}
+  header.header-container section.section-info h1.principal-title {
+    font-size: 8vh;
+    padding-bottom: 2rem;
+    color: white;
+    text-shadow: 0px 0px 13px rgb(55, 255, 0);
+    font-weight: 700;
+  }
 
-header.header-container section.section-info h1.principal-title {
-  font-size: 8vh;
-  padding-bottom: 2rem;
-  color: white;
-  text-shadow: 0px 0px 13px rgb(55, 255, 0);
-  font-weight: 700;
-}
-
-header.header-container section.section-info p.info {
-  font-size: 1.2rem;
-  padding: 0 0rem 3rem 0;
-}
+  header.header-container section.section-info p.info {
+    font-size: 1.2rem;
+    padding: 0 0rem 3rem 0;
+  }
+  .box-line {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+  }
+  .line {
+    
+    border-bottom: 2px solid #ffffff;
+    box-shadow: 0px 0px 13px rgb(55, 255, 0);
+    width: 100px;
+    padding: 0 auto;
+  }
 }
