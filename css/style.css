@@ -20,7 +20,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  padding: 15px 10px 0px;
+  padding: 15px 10px 30px;
 }
 
 h1 {
@@ -167,7 +167,12 @@ header.header-container section.section-info div.softwares-icons img:hover{
 
 
 /*---------MEDIA QUERIE SECTION----------*/
-
+/*--------MW:546px---------*/
+@media (min-width: 546px){
+  header.header-container {
+      margin-top: 70px;
+    }
+}
 /*--------MW:768px---------*/
 
 @media (min-width: 768px) {
@@ -188,7 +193,6 @@ section.section-logo-nav div.logo-and-menu div.logo img.logo {
 section.section-logo-nav div.logo-and-menu nav.menu ul.menu-items {
   display: flex;
   gap: 1rem;
-  background-color: blue
 }
 
 section.section-logo-nav div.logo-and-menu nav.menu ul.menu-items li a {
@@ -268,10 +272,9 @@ section.section-logo-nav div.icons img {
 
 /*-----SECOND SECTION-----*/
 header.header-container {
-  width: 100%;
+  width: 700px;
   display: flex;
   text-align: left;
-  padding: 2rem 25rem 0 1rem;
 }
 
 header.header-container section.section-info h1.principal-title {
@@ -286,28 +289,4 @@ header.header-container section.section-info p.info {
   font-size: 1.2rem;
   padding: 0 0rem 3rem 0;
 }
-}
-/*--------MW:1100px---------*/
-@media (min-width: 1100px) {
-  header.header-container {
-    padding: 20px 500px 0 10px;
-  }
-}
-/*--------MW:1217px---------*/
-@media (min-width: 1217px) {
-  header.header-container {
-    padding: 20px 600px 0 10px;
-  }
-}
-/*--------MW:1320ppx---------*/
-@media (min-width: 1320px) {
-  header.header-container {
-    padding: 20px 700px 0 10px;
-  }
-}
-/*--------MW:1420px---------*/
-@media (min-width: 1420px) {
-  header.header-container {
-    padding: 20px 800px 0 10px;
-  }
 }

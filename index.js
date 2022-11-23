@@ -1,6 +1,6 @@
 /// Iteration 2: getMaxNum
-
-function getMaxNum(someNum) {
+//FOR LOOP
+/*function getMaxNum(someNum) {
   let maxNum = 0;
   for (let i = 0; i < someNum.length; i++){
     if (someNum[i] > maxNum) {
@@ -8,9 +8,12 @@ function getMaxNum(someNum) {
     }; 
   };
   return maxNum;
+};*/
+//METHODS
+function getMaxNum(someNum) {
+  let newArr = someNum.filter((nums) => typeof nums === "number").sort((a, b) => a - b)
+  return newArr.pop()
 };
-
-
 // Iteration 2 tests:
 console.log(getMaxNum([45, 67, 12, 34, 67])) // Should return 67
 console.log(getMaxNum(['hello', [0, 1, 2], 34, 45, 12, 0])) // Should return 45
@@ -22,7 +25,7 @@ console.log(getMaxNum(['hello', 19, 1, undefined])) // Should return 19
 
 /// Iteration 3: changeItem
 
-function changeItem(someArr, num1, num2) {
+/*function changeItem(someArr, num1, num2) {
   let newArr = [];
   for (let i = 0; i < someArr.length; i++) {
     if (someArr[i] === num1) {
@@ -32,7 +35,10 @@ function changeItem(someArr, num1, num2) {
     };
   };
   return newArr;
-};
+};*/
+function changeItem(someArr, num1, num2) { 
+  
+}
 
 // Iteration 3 tests:
 console.log(changeItem([3, 5, 7], 3, 4)) // Should return [4,5,7]
